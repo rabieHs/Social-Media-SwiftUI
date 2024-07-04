@@ -8,11 +8,33 @@
 import SwiftUI
 
 struct CreatePostView: View {
+    @Binding  var isShowCreatePost: Bool
+    @State var text: String = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HStack{
+                Button(action: {
+                    isShowCreatePost = false
+                }, label: {
+                    Text("Cancel")
+                })
+                Spacer()
+                Button(action: {}, label: {
+                    Text("Post")
+                       
+                })
+                .buttonStyle(.bordered)
+                .background(.accent)
+                .foregroundStyle(.background)
+                .clipShape(Capsule())
+                
+            }
+            MultilineTextField(text: $text)
+            Spacer()
+        }.padding()
     }
 }
 
 #Preview {
-    CreatePostView()
+    CreatePostView(isShowCreatePost: .constant(true))
 }

@@ -8,9 +8,32 @@
 import SwiftUI
 
 struct Feed: View {
+    @State private var isShowingAddPost: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            
+        }.overlay(alignment: .bottomTrailing) {
+            Button{
+               isShowingAddPost = true
+            }label: {
+                Image(systemName: "plus")
+                    .resizable()
+                    .frame(width: 20,height: 20)
+                    .padding()
+                    .background(.accent)
+                    .foregroundStyle(.background)
+                    .clipShape(Circle())
+                    .padding()
+                   
+                
+                    
+            }
+        }.sheet(isPresented: $isShowingAddPost, content: {
+            CreatePostView(isShowCreatePost: $isShowingAddPost)
+        })
     }
+    
 }
 
 #Preview {
