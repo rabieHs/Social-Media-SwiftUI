@@ -9,7 +9,16 @@ import SwiftUI
 
 struct Messages: View {
     var body: some View {
-        Text("Messages")
+        VStack{
+           
+                List(0..<9){search in
+                    MessageCell()
+                }
+                .listStyle(.plain)
+           
+            
+          
+        }
     }
 }
 

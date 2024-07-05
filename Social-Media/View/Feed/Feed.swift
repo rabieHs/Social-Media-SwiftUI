@@ -12,7 +12,13 @@ struct Feed: View {
     
     var body: some View {
         NavigationView{
-            
+            VStack{
+             
+                List(1..<10,id: \.self){post in
+                    PostCellView(contentText: text)
+                }
+                .listStyle(.plain)
+            }
         }.overlay(alignment: .bottomTrailing) {
             Button{
                isShowingAddPost = true

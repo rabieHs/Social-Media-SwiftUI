@@ -9,7 +9,27 @@ import SwiftUI
 
 struct TopBar: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HStack{
+                Button{
+                    
+                }label: {
+                    Image(systemName: "line.horizontal.3")
+                        .font(.system(size: 24))
+                }
+                Spacer()
+                Text("@")
+                    .bold()
+                    .font(.system(size: 20))
+                    .padding(.trailing)
+                Spacer()
+                
+            }
+            .padding()
+            
+            Divider()
+                
+        }
     }
 }
 

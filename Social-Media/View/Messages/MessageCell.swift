@@ -9,7 +9,42 @@ import SwiftUI
 
 struct MessageCell: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing:15){
+            AsyncImage(url: URL(string: "https://i.pravatar.cc/100")) { image in
+                image
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 60,height: 60)
+                    .clipShape(Circle())
+                
+            } placeholder: {
+                ProgressView()
+                    .frame(width: 60,height: 60)
+            }
+            VStack(alignment:.leading,spacing: 5,content: {
+                HStack{
+                    Text("Rabie ")
+                        .bold()
+                    +
+                    
+                    Text("@Rabi3hs")
+                        .fontWeight(.light)
+                        .foregroundStyle(.gray)
+                    
+                    Spacer()
+                    
+                    Text("6/20/24")
+                        .fontWeight(.light)
+                        .foregroundStyle(.gray)
+                  
+                }
+                Text("You: Hello My Friend")
+                    .foregroundStyle(.gray)
+                
+            })
+           
+        }
+      
     }
 }
 

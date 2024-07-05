@@ -9,7 +9,16 @@ import SwiftUI
 
 struct Notification: View {
     var body: some View {
-        Text("Notifications")
+        VStack{
+           
+                List(0..<9){search in
+                    NotificationCell()
+                }
+                .listStyle(.plain)
+           
+            
+          
+        }
     }
 }
 

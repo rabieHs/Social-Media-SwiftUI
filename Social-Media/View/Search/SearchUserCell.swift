@@ -9,7 +9,27 @@ import SwiftUI
 
 struct SearchUserCell: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            AsyncImage(url: URL(string: "https://i.pravatar.cc/100")) { image in
+                image
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 44,height: 44)
+                    .clipShape(Circle())
+                
+            } placeholder: {
+                ProgressView()
+                    .frame(width: 44,height: 44)
+            }
+            
+            VStack(alignment:.leading){
+                Text("Rabie")
+                    .fontWeight(.heavy)
+                Text("@Rabi3hs")
+            }
+            
+
+        }.frame(maxWidth: .infinity,alignment: .leading)
     }
 }
 

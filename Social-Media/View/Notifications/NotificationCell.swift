@@ -8,8 +8,33 @@
 import SwiftUI
 
 struct NotificationCell: View {
+    @State var width = UIScreen.main.bounds.width
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+       
+        HStack{
+            AsyncImage(url: URL(string: "https://i.pravatar.cc/100")) { image in
+                image
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 36,height: 36)
+                    .clipShape(Circle())
+                
+            } placeholder: {
+                ProgressView()
+                    .frame(width: 36,height: 36)
+            }
+            VStack(spacing: 5, content: {
+                Text("Rabie ")
+                    .bold()
+                +
+                
+                Text("Followed You ")
+              
+                
+            })
+            Spacer()
+        }
+       
     }
 }
 

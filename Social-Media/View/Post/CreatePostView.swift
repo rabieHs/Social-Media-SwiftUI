@@ -17,6 +17,7 @@ struct CreatePostView: View {
                     isShowCreatePost = false
                 }, label: {
                     Text("Cancel")
+                      
                 })
                 Spacer()
                 Button(action: {}, label: {

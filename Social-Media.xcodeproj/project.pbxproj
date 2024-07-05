@@ -18,6 +18,15 @@
 		E86DAA552C36F610006777C2 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA542C36F610006777C2 /* Messages.swift */; };
 		E86DAA572C37016A006777C2 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA562C37016A006777C2 /* CreatePostView.swift */; };
 		E86DAA5B2C370725006777C2 /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA5A2C370725006777C2 /* MultilineTextField.swift */; };
+		E86DAA5D2C38117C006777C2 /* PostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA5C2C38117C006777C2 /* PostCellView.swift */; };
+		E86DAA5F2C3824E4006777C2 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA5E2C3824E4006777C2 /* SearchCell.swift */; };
+		E86DAA612C3826D3006777C2 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA602C3826D3006777C2 /* SearchBar.swift */; };
+		E86DAA632C382E02006777C2 /* SearchUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA622C382E02006777C2 /* SearchUserCell.swift */; };
+		E86DAA652C383264006777C2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA642C383264006777C2 /* Extensions.swift */; };
+		E86DAA672C38347F006777C2 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA662C38347F006777C2 /* NotificationCell.swift */; };
+		E86DAA692C383DBF006777C2 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA682C383DBF006777C2 /* MessageCell.swift */; };
+		E86DAA6B2C384048006777C2 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA6A2C384048006777C2 /* TopBar.swift */; };
+		E86DAA6D2C384272006777C2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA6C2C384272006777C2 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +42,15 @@
 		E86DAA542C36F610006777C2 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		E86DAA562C37016A006777C2 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
 		E86DAA5A2C370725006777C2 /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
+		E86DAA5C2C38117C006777C2 /* PostCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellView.swift; sourceTree = "<group>"; };
+		E86DAA5E2C3824E4006777C2 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		E86DAA602C3826D3006777C2 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		E86DAA622C382E02006777C2 /* SearchUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserCell.swift; sourceTree = "<group>"; };
+		E86DAA642C383264006777C2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E86DAA662C38347F006777C2 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		E86DAA682C383DBF006777C2 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		E86DAA6A2C384048006777C2 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		E86DAA6C2C384272006777C2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +144,7 @@
 		E86DAA422C36F145006777C2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E86DAA642C383264006777C2 /* Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -141,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				E86DAA5A2C370725006777C2 /* MultilineTextField.swift */,
+				E86DAA602C3826D3006777C2 /* SearchBar.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -164,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				E86DAA542C36F610006777C2 /* Messages.swift */,
+				E86DAA682C383DBF006777C2 /* MessageCell.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -172,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				E86DAA502C36F5F1006777C2 /* Notification.swift */,
+				E86DAA662C38347F006777C2 /* NotificationCell.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -180,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				E86DAA522C36F600006777C2 /* Search.swift */,
+				E86DAA5E2C3824E4006777C2 /* SearchCell.swift */,
+				E86DAA622C382E02006777C2 /* SearchUserCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -188,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				E86DAA4E2C36F5E2006777C2 /* Feed.swift */,
+				E86DAA5C2C38117C006777C2 /* PostCellView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -196,6 +221,8 @@
 			isa = PBXGroup;
 			children = (
 				E86DAA4C2C36F24E006777C2 /* Home.swift */,
+				E86DAA6A2C384048006777C2 /* TopBar.swift */,
+				E86DAA6C2C384272006777C2 /* MainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -270,15 +297,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86DAA5D2C38117C006777C2 /* PostCellView.swift in Sources */,
+				E86DAA6D2C384272006777C2 /* MainView.swift in Sources */,
+				E86DAA692C383DBF006777C2 /* MessageCell.swift in Sources */,
+				E86DAA5F2C3824E4006777C2 /* SearchCell.swift in Sources */,
 				E86DAA332C36F0AB006777C2 /* ContentView.swift in Sources */,
 				E86DAA512C36F5F1006777C2 /* Notification.swift in Sources */,
+				E86DAA632C382E02006777C2 /* SearchUserCell.swift in Sources */,
 				E86DAA4F2C36F5E2006777C2 /* Feed.swift in Sources */,
+				E86DAA612C3826D3006777C2 /* SearchBar.swift in Sources */,
 				E86DAA552C36F610006777C2 /* Messages.swift in Sources */,
+				E86DAA6B2C384048006777C2 /* TopBar.swift in Sources */,
 				E86DAA572C37016A006777C2 /* CreatePostView.swift in Sources */,
 				E86DAA532C36F600006777C2 /* Search.swift in Sources */,
 				E86DAA5B2C370725006777C2 /* MultilineTextField.swift in Sources */,
 				E86DAA4D2C36F24E006777C2 /* Home.swift in Sources */,
 				E86DAA312C36F0AB006777C2 /* Social_MediaApp.swift in Sources */,
+				E86DAA672C38347F006777C2 /* NotificationCell.swift in Sources */,
+				E86DAA652C383264006777C2 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

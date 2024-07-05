@@ -9,9 +9,9 @@ import SwiftUI
 
 struct PostCellView: View {
     var contentText : String
-    var postImage : String?
+    var postImage : String? = "v"
     var body: some View {
-        VStack{
+     
             HStack(alignment:.top){
                 AsyncImage(url: URL(string: "https://images.unsplash.com/photo-1720091762865-4be05c1a82d8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D")) { image in
                     image.resizable()
@@ -20,6 +20,7 @@ struct PostCellView: View {
                         .clipShape(Circle())
                 } placeholder: {
                     ProgressView()
+                        .frame(width: 55,height: 55)
                 }
                 VStack(alignment: .leading,spacing: 10){
                     Text("Rabie ")
@@ -30,13 +31,20 @@ struct PostCellView: View {
                         .frame(maxHeight: 100,alignment: .top)
                     if let image = postImage {
                         GeometryReader{ proxy in
-                            Image(image)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: proxy.frame(in: .global).width,height: 250)
-                                .clipShape(.rect(cornerRadius: 15))
+                            AsyncImage(url: URL(string: "https://images.unsplash.com/photo-1720091762865-4be05c1a82d8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D")){
+                            image in
+                                image
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: proxy.frame(in: .global).width,height: 250)
+                                    .clipShape(.rect(cornerRadius: 15))
+                            } placeholder: {
+                                ProgressView()
+                                    .frame(width: proxy.frame(in: .global).width,height: 250)
+                            }
+                               
                             
-                        }
+                        }.frame(height: 250)
                     }
                     HStack(spacing:50){
                         Button{
@@ -75,7 +83,7 @@ struct PostCellView: View {
             }
         }
     }
-}
+
 
 #Preview {
     PostCellView(contentText: text)
