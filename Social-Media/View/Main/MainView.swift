@@ -12,6 +12,7 @@ struct MainView: View {
         VStack{
             TopBar()
             Home()
+           
             
         }
     }

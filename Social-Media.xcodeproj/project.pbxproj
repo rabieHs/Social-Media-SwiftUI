@@ -27,6 +27,10 @@
 		E86DAA692C383DBF006777C2 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA682C383DBF006777C2 /* MessageCell.swift */; };
 		E86DAA6B2C384048006777C2 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA6A2C384048006777C2 /* TopBar.swift */; };
 		E86DAA6D2C384272006777C2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA6C2C384272006777C2 /* MainView.swift */; };
+		E86DAA6F2C3857CC006777C2 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA6E2C3857CC006777C2 /* SideMenu.swift */; };
+		E86DAA712C38599B006777C2 /* FollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA702C38599B006777C2 /* FollowView.swift */; };
+		E86DAA732C385DCA006777C2 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA722C385DCA006777C2 /* MenuButton.swift */; };
+		E86DAA752C386065006777C2 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAA742C386065006777C2 /* MenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,10 @@
 		E86DAA682C383DBF006777C2 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		E86DAA6A2C384048006777C2 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		E86DAA6C2C384272006777C2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E86DAA6E2C3857CC006777C2 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		E86DAA702C38599B006777C2 /* FollowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowView.swift; sourceTree = "<group>"; };
+		E86DAA722C385DCA006777C2 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		E86DAA742C386065006777C2 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,7 @@
 		E86DAA402C36F112006777C2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E86DAA742C386065006777C2 /* MenuItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,6 +170,8 @@
 			children = (
 				E86DAA5A2C370725006777C2 /* MultilineTextField.swift */,
 				E86DAA602C3826D3006777C2 /* SearchBar.swift */,
+				E86DAA702C38599B006777C2 /* FollowView.swift */,
+				E86DAA722C385DCA006777C2 /* MenuButton.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -223,6 +234,7 @@
 				E86DAA4C2C36F24E006777C2 /* Home.swift */,
 				E86DAA6A2C384048006777C2 /* TopBar.swift */,
 				E86DAA6C2C384272006777C2 /* MainView.swift */,
+				E86DAA6E2C3857CC006777C2 /* SideMenu.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -297,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86DAA732C385DCA006777C2 /* MenuButton.swift in Sources */,
 				E86DAA5D2C38117C006777C2 /* PostCellView.swift in Sources */,
 				E86DAA6D2C384272006777C2 /* MainView.swift in Sources */,
 				E86DAA692C383DBF006777C2 /* MessageCell.swift in Sources */,
@@ -310,9 +323,12 @@
 				E86DAA6B2C384048006777C2 /* TopBar.swift in Sources */,
 				E86DAA572C37016A006777C2 /* CreatePostView.swift in Sources */,
 				E86DAA532C36F600006777C2 /* Search.swift in Sources */,
+				E86DAA712C38599B006777C2 /* FollowView.swift in Sources */,
 				E86DAA5B2C370725006777C2 /* MultilineTextField.swift in Sources */,
 				E86DAA4D2C36F24E006777C2 /* Home.swift in Sources */,
+				E86DAA6F2C3857CC006777C2 /* SideMenu.swift in Sources */,
 				E86DAA312C36F0AB006777C2 /* Social_MediaApp.swift in Sources */,
+				E86DAA752C386065006777C2 /* MenuItem.swift in Sources */,
 				E86DAA672C38347F006777C2 /* NotificationCell.swift in Sources */,
 				E86DAA652C383264006777C2 /* Extensions.swift in Sources */,
 			);
